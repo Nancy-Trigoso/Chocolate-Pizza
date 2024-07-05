@@ -10,9 +10,6 @@ header {
     margin-inline: auto;
     margin-top: 35px;
     margin-bottom: 25px;
-    width: var(--maxwidth);
-    
-}
 
 header .logo-container{
     display: flex;
@@ -58,6 +55,7 @@ footer {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.5;
 }
+
 footer img{
     width: 30px; 
     height: auto;
