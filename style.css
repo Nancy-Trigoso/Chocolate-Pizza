@@ -2,42 +2,71 @@
     margin: 0;
     padding: 0;
 }
+body {
+    margin-left: 100px;  
+    margin-right: 100px; 
+}
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 2px solid #e6e6e6;
+    margin-inline: auto;
+    margin-top: 35px;
+    margin-bottom: 25px;
 }
 .logo img {
     width: 50px;
     height: 50px;
 }
-h1 {
-    font-size: 36px;
-    margin: 0;
-    font-family: 'Georgia', serif;
+header .logo-container{
+    display: flex;
+    align-items: center;
 }
-p {
-    margin: 0;
-    font-size: 14px;
-    color: #666;
-    font-family: 'Arial', sans-serif;
-}
-.menu {
+header .empresa{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
 }
-.redes1, .redes2 {
+header .logo-container img{
+    width: 47px;
+    padding-right: 5px;
+}
+header ul{
     display: flex;
-    gap: 10px;
+    gap: 2px;
+    margin-left: 20px;
 }
-.menu a img {
-    width: 24px;
-    height: 24px;
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 70px 0;
+    background-color: white;
+    font-size: 15px;
+    color: #999;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
 }
-.contenerdorhr img {
-    width: 100%;
+footer img{
+    width: 30px; 
     height: auto;
+}
+.footer-line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.footer-line::before,
+.footer-line::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+
+.footer-line::before {
+    margin-right: 10px;
+}
+
+.footer-line::after {
+    margin-left: 10px;
 }
