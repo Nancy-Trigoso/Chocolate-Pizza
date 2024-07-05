@@ -1,84 +1,233 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    --maxwidth:70vw;
+    --colortext:#723e25;
+    
 }
 
-header {
+header{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    width: var(--maxwidth);
+    
+}
+header .logo{
+    display: flex;
+    align-items: center;
     margin-inline: auto;
     margin-top: 35px;
     margin-bottom: 25px;
-
-header .logo-container{
-    display: flex;
-    align-items: center;
 }
-header .empresa{
+header .brand{
     display: flex;
     flex-direction: column;
 }
-header .logo-container img{
+header .logo img{
     width: 47px;
     padding-right: 5px;
+    margin-left: 200px;
 }
 header ul{
     display: flex;
     gap: 2px;
     list-style-type: none;
-    float: right;
+    margin-left: 920px;
+    
+}
+
+header ul li {
+    margin-top: -70px; 
 }
 header li:nth-child(7){
     margin-left: 20px;
     list-style-type: none;
-
+    
+    
 }
+
+header .empresa #tittle, #subtitle{
+    margin-right: 50px;
+}
+
 header .empresa #tittle{
     font-family: 'Yellowtail', cursive;
     font-size: 2.5rem;
     font-weight: bold;
+    
 }
 header .empresa #subtittle{
-    font-family:'Patrick Hand SC', cursive ;
+    font-family:'Patrick Hand SC';
     text-transform: uppercase;
     font-size: 1rem;
     opacity: 60%;
-}
-footer {
-    margin-top: 50px;
-    text-align: center;
-    padding: 70px 0;
-    background-color: white;
-    font-size: 15px;
-    color: #999;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1.5;
+    
 }
 
-footer img{
-    width: 30px; 
-    height: auto;
+main{
+    max-width: var(--maxwidth);
+    margin-inline: auto;
+    font-family:serif ;
 }
-.footer-line {
-    width: 100%;
+
+main .hr{
+    background: url(./img/hr-img.png);
+    height: 1rem;
+    border: none;
+    margin-top: 20px; 
+}
+
+main .contenedor1{
+    margin-top: 65px;
     display: flex;
-    align-items: center;
-    position: relative;
+    flex-direction: column;
+}
+main .contenedor1 #diseño1{
+    display: flex;
+    justify-content:space-between;
+
+}
+main .contenedor1 h1{
+    font-family: 'Oswald';
+    font-size: 2.8rem;
+    font-weight:bold;
+    margin-bottom: 10px;
+}
+main .contenedor1 #h1 p{
+    
+    font-family: 'Patrick Hand ';
+    font-size: 1rem;
+    opacity: 40%;
+}
+main .contenedor1 #print a{
+    display: flex;
+    margin-top: 50px;
+    font-family: 'Patrick Hand SC';
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+   
+}
+main .contenedor1 #print a img{
+    height: 12px;
+    margin-top: 3px;
+   
+   
+}
+main .contenedor1 #print p{
+    opacity: 30%;
+}
+main .contenedor1 img{
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-.footer-line::before,
-.footer-line::after {
-    content: none;
-    flex: 1;
-    height: 1px;
-    background-color: #e0e0e0;
+main .contenedor1 .texto{
+    margin-block: 20px;
+    font-size: 1.2rem;
+    line-height: 25px;
+    color: var(--colortext);
+    text-indent: 20px;
 }
 
-.footer-line::before {
+main .ingredientes{
+    background: url(./img/list-bg.png) 100%;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Nunito Sans", sans-serif;
+    height: 300px;
+    margin-bottom: 40px;
+
+}
+main .ingredientes label{
+    font-size: 1.3rem;
+}
+main .ingredientes ul{
+    margin-block: 40px;
+}
+main .ingredientes li{
+    margin-block: 07px;
+    margin-left: 120px; 
+}
+:checked + label{
+    text-decoration: line-through;
+    font-weight: 800px;
+    
+}
+main .contenedor2{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    color: var(--colortext);
+}
+main .contenedor2 h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+main .contenedor2 p{
+    font-size: 1.3rem;
+    
+}
+#autora {
+    width: 600px;
+    margin-left: 25px;
+    
+}
+.contenedor2 a{
+    background-color:#bc7058;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 200px; 
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Oswald';
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.contenedor2 img{
+    width: 90px;
+    margin-bottom: 50px;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    opacity: 0.4; 
+    margin-inline: auto;
     margin-right: 10px;
-}
-
-.footer-line::after {
     margin-left: 10px;
+    
+}
+footer .hr{
+    position: relative;
+    margin-right:190px;
+    margin-left: 190px;
+    
+}
+footer .hr hr{
+    border-bottom: none;
+}
+footer .hr img{
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    border: 5px solid white;
+    width: 40px;
+    text-align: center;
+
+}
+footer  .p{
+    font-size: 1.1rem;
+    margin-top: 50px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-left: 60px;
+    
 }
